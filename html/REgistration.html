@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../js/register.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/REgistration.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <div class="header">
+        <a href="#home"><img src="../images/img1.png" alt="Logo" class="logo" width="200px"></a>
+        <div>
+            <a href="../html/Sign in.html"><button>Sign-In</button></a>
+            <a href="../../html/Sign up.html"><button>Sign-Up</button></a>
+        </div>
+    </div>
+
+
+   <ul class="Navigation">
+  <li><a href="Home.html">Home</a></li>
+        <li>
+            <div class="dropdown">
+                <a href="#REgistration.html">Registration Forms
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+
+                <div class="dropdownMenu">
+                    <a href="">COVID 19 Registration Forms</a>
+                    <a href="REgistration.html"class="active">Other Vaccination Forms</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="guidlines.html">Guidlines</a></li>
+        <li><a href="inquries.html">Support</a></li>
+        <li><a href="payment.html">Payment</a></li>
+
+
+        <div class="right">
+            <li id="SearchBar"><input type="text" placeholder="Search..." class="Search"></li>
+            <button class="SearchIcon"><i class="material-icons"><a href="">Search</a></i></button>
+        </div>
+    </ul>
+
+    <centre>
+<h2><b><u> Other Registration Form</u></b></h2>
+	<br>
+    </centre>
+
+	
+	<br>
+	
+        
+        <div class="form-cont">
+
+
+            <form method="POST" action="../php/REgistration.php" class="formC" id="formI" name="form">
+                
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="first_name" required>
+                    <!-- <div class="error" id="E1">Enter Valid User Name</div> -->
+                </div>
+                <br><br>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" required>
+                    <!-- <div class="error" id="E1">Enter Valid User Name</div> -->
+                </div>
+                <br><br>
+                
+                <div>
+                    <label>Address</label>
+                    <input type="text" name="user_address"  required>
+                    <!-- <div class="error" id="E1">Enter Valid User Name</div> -->
+                </div>
+                <br><br>
+    
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" name="e_mail" required>
+                    <div class="error" id="E2">Error message</div>
+                </div>
+                <br><br>
+                <div>
+    
+                    <label>Date of Birth</label>
+                    <input type="date" name="date_of_birth" required>
+                    <!-- <div class="error" id="E2">Error message</div> -->
+                </div>
+                <br><br>
+             <div>
+                   <label>Gender</label>
+                    <input type="Radio" name="Gender"Value="Male" >Male
+                    <input type="Radio" name="Gender"Value="Female" >Female<br><br>
+                    <!-- <div class="error" id="E2">Error message</div> -->
+                </div>
+              
+                <br><br>
+            
+                <div>
+                    <label>phone</label>
+                    <input type="text" name="phone" required>
+                
+                </div>
+<br><br>
+                <div>
+                    
+                    <label>Vaccine Type</label>
+                    <select name="vaccine_type" id="Vaccine">
+                    <option value="1">According to Brands</option>
+                    <option value="2">According to Doses </option>
+                
+                </div>
+                <br><br>
+                            	<!-- Uploading the pro pic -->
+
+	<div class = "propic">
+        <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+        <button class = "btnUpload" class = "up1"><label for="file" style="font-size: 20px; cursor: pointer;">Upload Profile Picture</label></button><br><br>
+        <img src = "C:\Users\ACER\Downloads\Online Vaccination Portal\Online Vaccination Portal\images\download.png" style = " margin-right: 90px" id="output" width="150" /><br><br>
+        </div>
+        <div>
+      
+        <label font-left>Accept Privacy Policy Terms</label> <br>
+         <input type="checkbox" id="policy" name="policy" required onclick="enableButton()">
+	
+    </div>
+
+        <br>
+    
+                <div>
+          
+                    <input type="submit" value="Submit" id="btn1">
+                    <input type="Reset" value="Reset" id="btn2">  
+         
+    
+        </div>
+    
+        <script src="C:\Users\ACER\Downloads\Online Vaccination Portal\Online Vaccination Portal\js\register.js"></script>
+	
+   
+	
+</form>
+	
+
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="col-1">
+            <h3>QUICK LINKS</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Locations</a>
+            <a href="#">Guidlines</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form action="">
+                <input type="email" placeholder="Your email address" required>
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>34/2, Malwana Road,<br>Alhena,Kelaniya</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Copyright" style="font-style:italic;text-align:center; margin:3px;">
+        <p>Copyright &copy; 2022 All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

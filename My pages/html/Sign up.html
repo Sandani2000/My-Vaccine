@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create an Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../js/Sign up.js"></script>
+    <script src="https://kit.fontawesome.com/77c24502d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Sign up.css">
+</head>
+
+<body>
+    <div>
+        <h3>Create an Account</h3>
+    </div>
+
+    <div class="main">
+        <div class="section1">
+            <br>
+            <h4>Vaccination saves life at every stage</h4>
+
+            <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <div class="section2">
+            <form action="../php/Sign up.php" method="post">
+                <div class="row1">
+                    <div class="subPart">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="firstName" placeholder="First Name" required>
+                    </div>
+
+                    <div class="subPart">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="secondName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <div class="subPart">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email Address" id="email" required>
+                    </div>
+
+                    <div class="subPart">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="" name="contactNmber" placeholder="Contact Number" required>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <div class="subPart">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="password" placeholder="Password" id="password" required>
+                    </div>
+
+                    <div class="subPart">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="confirmPassword" placeholder="Confirm Password"
+                            id="confirmPassword" required>
+                    </div>
+                </div>
+
+                <div class="part1">
+                    <div class="agreement" style="text-align: left;">
+                        <input type="checkbox"  onclick="checkEquality()" required>
+                        <label for="">I agree with <a href="">Terms & Conditions</a></label>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" value="Sign Up" id="button"></input>
+                </div>
+
+                <div class="part3">
+                    <p>Have already an account? <a href="Sign in.html">Login here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <div class="footer">
+            <h5>Copyright &copy; 2022 All Rights Reserved</h5>
+        </div>
+    </div>
+</body>
+
+</html>

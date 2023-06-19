@@ -1,0 +1,133 @@
+<html>
+
+<head>
+
+	<title>Inquiries</title>
+      <script src="../js/Inquiries.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/Inquries.css">
+
+
+
+</head>
+
+<body>
+<!--Header-->
+    <div class="header">
+        <a href="#home"><img src="../images/img1.png" alt="Logo" class="logo" width="200px"></a>
+        <div>
+            <a href="../html/Sign in.html"><button>Sign-In</button></a>
+            <a href="../../html/Sign up.html"><button>Sign-Up</button></a>
+        </div>
+    </div>
+
+
+    <ul class="Navigation">
+                    <li><a href="Home.html">Home</a></li>
+        <li>
+            <div class="dropdown">
+                <a href="#REgistration.html">Registration Forms
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+
+                <div class="dropdownMenu">
+                    <a href="submit-covid-vac-form.php">COVID 19 Registration Forms</a>
+                    <a href="REgistration.html">Other Vaccination Forms</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="guidlines.html">Guidlines</a></li>
+        <li><a href="inquries.html"class="active">Support</a></li>
+        <li><a href="payment.html">Payment</a></li>
+
+
+        <div class="right">
+            <li id="SearchBar"><input type="text" placeholder="Search..." class="Search"></li>
+            <button class="SearchIcon"><i class="material-icons"><a href="">Search</a></i></button>
+        </div>
+    </ul>
+
+	
+
+	<div class="container">
+		<div class="header">
+
+			<h2>Inquiry Form</h2>
+		</div>
+
+		<form action="../php/Inquiries.php" method="POST" class="InquiryForm" id="Form">
+
+			<div class="User Name ">
+				<label>Full Name</label>
+				<input type="text" placeholder="Enter Full Name" name="FullName" id="Name">
+
+			</div>
+
+			<div class="User address">
+				<label>Address</label>
+				<input type="text" placeholder="Enter Address" name="Address" id="addr">
+
+			</div>
+
+			<div class="User  Email">
+				<label>Email</label>
+				<input type="Email" placeholder="Enter Email" name="Email" id="Email">
+
+			</div>
+
+			<div class="User Number">
+				<label>Phone Number</label>
+				<input type="tel" placeholder="Enter Phone Number" name="Phone" id="phoneNum">
+
+			</div>
+
+			<div class="User Massage">
+				<label>Massage</label>
+				<textarea rows="4" cols="100" placeholder=" Enter Massage" name="Massage" id="Msg"> </textarea>
+
+			</div>
+
+			<button type="submit">Submit</button>
+
+	</div>
+	</form>
+
+	  <!--Footer-->
+      <div class="footer">
+        <div class="col-1">
+            <h3>QUICK LINKS</h3>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Locations</a>
+            <a href="#">Guidlines</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSLETTER</h3>
+            <form action="">
+                <input type="email" placeholder="Your email address" required>
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>34/2, Malwana Road,<br>Alhena,Kelaniya</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Copyright" style="font-style:italic;text-align:center; margin:3px;">
+        <p>Copyright &copy; 2022 All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>

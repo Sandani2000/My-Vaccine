@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script
+      src="https://kit.fontawesome.com/77c24502d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/payment.css" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <div class="header">
+      <a href="#home"
+        ><img src="../images/img1.png" alt="Logo" class="logo" width="200px"
+      /></a>
+      <div>
+        <a href="../html/Sign in.html"><button>Sign-In</button></a>
+        <a href="../../html/Sign up.html"><button>Sign-Up</button></a>
+      </div>
+    </div>
+
+    <ul class="Navigation">
+      <li><a href="Home.html">Home</a></li>
+      <li>
+        <div class="dropdown">
+          <a href="#REgistration.html"
+            >Registration Forms
+            <i class="fa-solid fa-caret-down"></i>
+          </a>
+
+          <div class="dropdownMenu">
+            <a href="">COVID 19 Registration Forms</a>
+            <a href="REgistration.html">Other Vaccination Forms</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="guidlines.html">Guidlines</a></li>
+      <li><a href="inquries.html">Support</a></li>
+      <li><a href="payment.html" class="active">Payment</a></li>
+
+      <div class="right">
+        <li id="SearchBar">
+          <input type="text" placeholder="Search..." class="Search" />
+        </li>
+        <button class="SearchIcon">
+          <i class="material-icons"><a href="">Search</a></i>
+        </button>
+      </div>
+    </ul>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="payment.php" method="POST">
+            <div class="row">
+              <div class="col-50">
+                <h3>Payment Details</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" />
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" />
+                <label for="adr"
+                  ><i class="fa fa-address-card-o"></i> Address</label
+                >
+                <input type="text" id="adr" name="address" />
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" />
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" />
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color: navy"></i>
+                  <i class="fa fa-cc-amex" style="color: blue"></i>
+                  <i class="fa fa-cc-mastercard" style="color: red"></i>
+                  <i class="fa fa-cc-discover" style="color: orange"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" />
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" />
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" />
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" />
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <input type="submit" value="Done" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+      <div class="col-1">
+        <h3>QUICK LINKS</h3>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Locations</a>
+        <a href="#">Guidlines</a>
+        <a href="#">Support</a>
+      </div>
+      <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form action="">
+          <input type="email" placeholder="Your email address" required />
+          <br />
+          <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>CONTACT</h3>
+        <p>34/2, Malwana Road,<br />Alhena,Kelaniya</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="Copyright"
+      style="font-style: italic; text-align: center; margin: 3px"
+    >
+      <p>Copyright &copy; 2022 All Rights Reserved</p>
+    </div>
+  </body>
+</html>

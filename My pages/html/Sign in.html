@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign In</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../js/sign in.js"></script>
+    <script src="https://kit.fontawesome.com/77c24502d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Sign in.css">
+</head>
+
+<body>
+
+    <div>
+        <h3>Sign In</h3>
+    </div>
+
+    <div class="main">
+        <div class="section1">
+            <br><br>
+            <h4>Vaccination saves life at every stage</h4>
+
+            <img src="../images/sign in.PNG" alt="Image">
+        </div>
+
+        <div class="section2">
+            <form name="form" action="../php/Sign in.php" method="post">
+                <div class="mainPart">
+                    <div class="subPart">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email Address" id="email" >
+                    </div>
+
+                    <div class="subPart">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" id="password" >
+                    </div>
+
+                    <div class="part1">
+                        <div class="remember">
+                            <input type="checkbox">
+                            <label for="">Remember me</label>
+                        </div>
+
+                        <div class="forget">
+                            <a href="">Forget Password</a>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <button type="submit" name="signIn" onclick="notNull()">Sign In</button>
+                    </div>
+
+                    <div class="part3">
+                        <p>Don't have an account? <a href="Sign up.html">Create</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <div class="footer">
+            <h5>Copyright &copy; 2022 All Rights Reserved</h5>
+        </div>
+    </div>
+</body>
+
+</html>

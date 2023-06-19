@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    background-image: url("../images/cover4.jpg");
+    background-size: cover;
+    height: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin: 15px 0px;
+    width: 200px;
+}
+
+.header {
+    border-top: 10px solid rgb(125, 140, 147);
+    background-color: rgba(255, 254, 254, 0.906);
+    
+}
+
+.header div {
+    display: block;
+    float: right;
+    padding-top: 35px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header div button {
+    background-color: rgb(0, 67, 135);
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 5px;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.header div button:hover {
+    background-color: black;
+    color: white;
+}
+
+.Navigation {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 31, 96);
+}
+@media screen and(max-width:800px){
+
+
+		width:100px;
+
+
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+   
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+
+li a.active {
+
+    background-color: rgb(29, 111, 194);
+    color: white;
+}
+
+li a:hover {
+    background-color: rgba(170, 190, 249, 0.929);
+    color: black;
+}
+
+#SearchBar {
+    margin: 12px 0px;
+}
+
+.right .SearchIcon {
+    margin: 12px 10px;
+    padding: 3px 10px;
+    background-color: rgb(221, 225, 225);
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.right .SearchIcon a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul .right {
+    float: right;
+}
+
+
+.body {
+    background-color: rgb(243, 250, 248);
+    padding: 10px;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 200px;
+    width: 100%;
+    padding: 80px 15%;
+
+    color: rgb(255, 255, 255);
+    display: flex;
+    background: rgb(47, 44, 44);
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+
+}
+
+
+form {
+
+    background-color: rgb(165, 161, 161);
+    margin: 0 auto;
+    font-size : 20px; margin-left:78px
+    
+  }
+  .formC {
+    width:50%;
+    padding: 30px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  .form-cont input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .form-cont select {
+    border: 2px solid #5c5c5c;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .form-cont .error {
+    font-size: 12px;
+    margin-top: 6px;
+    width: 100%;
+    color: red;
+    background: rgba(255, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 3px;
+    border: 0.8px solid #ef9a9a;
+    display: none;
+  }
+  .form-cont small {
+    color: red;
+  }
+  
+  .form-cont label {
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: italic;
+    font-family: inherit;
+  }
+
+
+ #button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 0px;
+  }
+  
+  #button:hover {
+    background-color: #f2a65a;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #btn2{
+    background-color: #311b19;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 0px;
+  }
+  #btn2:hover {
+    background-color: #5af267;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+.dropdownMenu{
+    display: none;
+    max-width: 200px;
+}
+
+.dropdown:hover .dropdownMenu{
+    display: block;
+}
+
