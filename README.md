@@ -1,4 +1,5 @@
 # Project Name - My Vaccine (Online Vaccination System)
+My vaccine is an online vaccination platform that allows users to customize and manage vaccination schedules. The site allows vaccine seekers to book their vaccine by making suitable payments through site payment gateway
 
 ## Group Number - MLB_01.02_01
 
